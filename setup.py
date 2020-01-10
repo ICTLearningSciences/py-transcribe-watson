@@ -17,14 +17,14 @@ packages = find_packages()
 requirements = _read_dependencies()
 
 setup(
-    name="transcribe",
+    name="transcribe_watson",
     version="1.0.0",
     author_email="larrykirschner@gmail.com",
     description="framework for synchronous batch speech-to-text transcription using backends like watson, Watson, etc.",
     packages=packages,
-    package_dir={'transcribe': 'transcribe'},
+    package_dir={'transcribe_watson': 'transcribe_watson'},
     package_data={
-        "transcribe": ["py.typed"],
+        "transcribe_watson": ["py.typed"],
     },
     install_requires=requirements,
     long_description=long_description,
